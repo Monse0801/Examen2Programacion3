@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.Master.cs" Inherits="Examen.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Examen</title>
+    <link href="CSS/Menu.css" rel="stylesheet" />
+    <link href="CSS/GridviewDiseno.css" rel="stylesheet" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <link href="css/GridviewDiseno.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+                           <div>
+            <div class="page">
+
+  <nav class="page__menu page__custom-settings menu">
+    <ul class="menu__list r-list">
+      <li class="menu__group"><a href="Equipo.aspx" class="menu__link r-link text-underlined">Equipo</a></li>
+      <li class="menu__group"><a href="Tecnico.aspx" class="menu__link r-link text-underlined">Tecnico</a></li>
+      <li class="menu__group"><a href="Usuario.aspx" class="menu__link r-link text-underlined">Usuario</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="linktr">
+  
+</div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
